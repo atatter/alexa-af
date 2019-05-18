@@ -6,7 +6,7 @@ const app = express();
 const access_token = 'BQB4UEwzWRsqY9he5ji6k0IgS1X1TElqjSGiIO2-a8EXM2ngVxg5AN2LFw-MPD0HEqpx7i5uu4QcsnCGDQNgB43nq4hVCxVyZLKWBYQnTE5j-y32yHXU8GuEJuaM40Jv5LQ_xSzs68HQHJ7Bo8qIILcG-KBosxoorD2gYg5ckgf_5QP5iTnqGaqaLuwultkjp25cTuK2PpUctfPzVbJxgzP4mGI-2OIVRg7_LQEFJBkQCE8';
 const token_type = 'Bearer';
 const expires_in = 3600;
-
+/* 
 app.get('/test', (req, res) => {
     fetch('https://accounts.spotify.com/api/token?client_id=' + '328ddabad7494067934a0439939e127c', {
         method: 'POST',
@@ -51,7 +51,13 @@ app.get('/login', (req, res) => {
 app.get('/', (req, res) => {
     res.send('Works');
 });
-
-//app.use((req, res) => console.log(req) && res.send('up and running'));
+ */
+app.use((req, res) => {
+    console.log('---new request---');
+    console.log('Headers', req.headers);
+    console.log('Query', req.query);
+    console.log('Params', req.params);
+    res.send('up and running');
+});
 
 app.listen(8000, () => { console.log('Server runnin on port 8000') });
