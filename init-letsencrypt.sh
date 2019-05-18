@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(alekstatter.com www.alekstatter.com)
+domains=(my-dev.cf www.my-dev.cf)
 rsa_key_size=4096
 data_path="./config/certbot"
 email="alekstatter@gmail.com" # Adding a valid address is strongly recommended
