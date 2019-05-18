@@ -1,0 +1,25 @@
+{
+  "name": "alexa-af",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atatter/alexa-af.git"
+  },
+  "author": "Aleks Tatter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atatter/alexa-af/issues"
+  },
+  "homepage": "https://github.com/atatter/alexa-af#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
