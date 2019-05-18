@@ -3,7 +3,9 @@ version: '3.1'
 services:
   nodejs:
     image: node:latest
-    command: node /home/src/index.js
+    command: >
+      sh -c "npm install --prefix ./home &&
+             node /home/src/index.js"
     volumes:
       - ./:/home/
     ports:
